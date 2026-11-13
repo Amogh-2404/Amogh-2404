@@ -4,7 +4,7 @@ I work on data platforms at Texas Instruments in Bengaluru. Outside work, I cont
 
 I started learning Rust because I wanted to contribute to DataFusion. That has taken me into its foreign-function interface, query optimiser and SQL behaviour.
 
-[Portfolio](https://www.ramogh.com) · [LinkedIn](https://www.linkedin.com/in/amogh-ramesh-90319024a/) · [Email](mailto:ramogh2404@gmail.com)
+[Portfolio](https://www.ramogh.com) · [LinkedIn](https://www.linkedin.com/in/ramogh2404/) · [Email](mailto:ramogh2404@gmail.com)
 
 ## Open source
 
