@@ -1,37 +1,56 @@
-# Amogh Ramesh
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/profile-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="assets/profile-light.svg">
+  <img src="assets/profile-light.svg" alt="Amogh Ramesh — Data platforms · Database engines · Systems. Bengaluru, India. Rust, C++, Go and Python." width="100%">
+</picture>
 
-I work on data platforms at Texas Instruments in Bengaluru. Outside work, I contribute to Apache DataFusion and build projects in C++, Rust and Go.
+<p>
+  <a href="https://www.ramogh.com"><strong>Portfolio</strong></a>
+  &nbsp; / &nbsp;
+  <a href="https://www.linkedin.com/in/ramogh2404/"><strong>LinkedIn</strong></a>
+  &nbsp; / &nbsp;
+  <a href="mailto:ramogh2404@gmail.com"><strong>Email</strong></a>
+</p>
 
-I started learning Rust because I wanted to contribute to DataFusion. That has taken me into its foreign-function interface, query optimiser and SQL behaviour.
+I build data platforms at **Texas Instruments** and contribute to **Apache DataFusion**. I started learning Rust to work on DataFusion; my contributions now cover its foreign-function interface, query optimiser and SQL behaviour.
 
-[Portfolio](https://www.ramogh.com) · [LinkedIn](https://www.linkedin.com/in/ramogh2404/) · [Email](mailto:ramogh2404@gmail.com)
+## Contributions upstream
 
-## Open source
+### Apache DataFusion
+**Rust · Selected merged changes**
 
-**Apache DataFusion · Rust**
+- **[Writable tables across FFI](https://github.com/apache/datafusion/pull/23906)** — Foreign table providers lost their write overrides. I forwarded delete, update and truncate operations, with regression tests through a dynamically loaded library.
+- **[Arithmetic negation in the optimiser](https://github.com/apache/datafusion/pull/24668)** — Unary minus was being treated as bitwise complement. I removed the invalid rewrites and added optimiser and SQL regression tests.
+- **[Aggregate null handling](https://github.com/apache/datafusion/pull/23908)** — Preserved null-handling support across FFI, testing both supported and unsupported cases.
 
-Selected merged changes:
+[View all merged DataFusion contributions ↗](https://github.com/apache/datafusion/pulls?q=is%3Apr+author%3AAmogh-2404+is%3Amerged)
 
-- [Keep writable tables writable across FFI](https://github.com/apache/datafusion/pull/23906): preserve table-provider delete, update and truncate overrides, with tests through a dynamically loaded library.
-- [Fix arithmetic negation in the optimiser](https://github.com/apache/datafusion/pull/24668): remove bitwise-complement rewrites that produced incorrect results for unary minus.
-- [Preserve aggregate null-handling support](https://github.com/apache/datafusion/pull/23908): carry the capability across the FFI boundary, with positive and negative regression cases.
+### dbt Spark adapter
+**Python · [PR #2140 — open for review](https://github.com/dbt-labs/dbt-adapters/pull/2140)**
 
-[All merged DataFusion contributions →](https://github.com/apache/datafusion/pulls?q=is%3Apr+author%3AAmogh-2404+is%3Amerged)
+Adding `catalog.namespace.table` support across relation discovery, caching, incremental models and snapshots, with Spark/Iceberg compatibility tests.
 
-**dbt-spark · Python**
+## Selected projects
 
-[Three-part identifiers — PR #2140](https://github.com/dbt-labs/dbt-adapters/pull/2140) is open for review. It adds catalog-qualified relation names across discovery, caching, incremental models and snapshots, with Spark/Iceberg compatibility tests.
+### [Tez ↗](https://github.com/Amogh-2404/Tez)
+**C++17 · HTTP · Boost.Asio / Beast**
 
-## Projects
+A compact HTTP server. Each connection owns its parser and buffers; session handlers preserve response order for pipelined requests. Includes request limits, file-access checks and real-socket protocol tests.
 
-| Project | What I worked on |
-| :--- | :--- |
-| **[Tez](https://github.com/Amogh-2404/Tez)** · C++17 | A compact HTTP server using Boost.Asio and Beast. Per-connection ownership, ordered pipelining, bounded requests and socket-level protocol tests. [Design notes](https://github.com/Amogh-2404/Tez/blob/main/docs/architecture.md). |
-| **[MiniLang](https://github.com/Amogh-2404/minilang)** · C++ / LLVM 18 | A teaching compiler based on LLVM Kaleidoscope, with my own constant-folding, dead-code elimination and loop-invariant code motion passes. FileCheck tests inspect the transformed IR. |
-| **[Split-ordered lists](https://www.ramogh.com/work/split-ordered-lists)** · Go | A guided study of concurrent hash tables: lazy bucket initialisation, compare-and-swap and two-phase deletion. The link is a public write-up; the source is private. |
+[Source](https://github.com/Amogh-2404/Tez) · [Architecture](https://github.com/Amogh-2404/Tez/blob/main/docs/architecture.md) · [Tests](https://github.com/Amogh-2404/Tez/tree/main/tests)
 
-## What I want to work on next
+### [MiniLang ↗](https://github.com/Amogh-2404/minilang)
+**C++ · LLVM 18 · Compilers**
 
-Database engines, storage and the infrastructure around them. I enjoy work where understanding the behaviour means reading the implementation and writing a test that makes the problem visible.
+A teaching compiler based on LLVM Kaleidoscope. My work includes constant-folding, dead-code elimination and loop-invariant code motion passes, with FileCheck tests for the transformed IR.
 
-If your team works in this area, you can reach me at **[ramogh2404@gmail.com](mailto:ramogh2404@gmail.com)**.
+[Source](https://github.com/Amogh-2404/minilang) · [Architecture](https://github.com/Amogh-2404/minilang/blob/main/docs/architecture.md) · [Tests](https://github.com/Amogh-2404/minilang/tree/main/tests)
+
+### [Split-ordered lists ↗](https://www.ramogh.com/work/split-ordered-lists)
+**Go · Concurrency · Guided academic study**
+
+Implemented a concurrent hash table with lazy bucket initialisation, compare-and-swap and two-phase deletion. The public write-up explains the design; the source is private.
+
+---
+
+I’d like to keep working closer to **database engines, storage and query execution**. If that’s what your team builds, [let’s talk](mailto:ramogh2404@gmail.com).
