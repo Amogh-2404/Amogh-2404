@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1040" height="260" viewBox="0 0 1040 260" role="img" aria-labelledby="title desc">
+<title id="title">Amogh Ramesh — Data platforms, database engines and systems</title>
+<desc id="desc">Bengaluru, India. Rust, C++, Go and Python.</desc>
+<rect x="1" y="1" width="1038" height="258" rx="14" fill="#f5f4ef" stroke="#d0dcd9"/>
+<path d="M 40 40 H 94" stroke="#237b70" stroke-width="4"/>
+<g font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Arial,sans-serif">
+<text x="40" y="108" fill="#182e3b" font-size="52" font-weight="650" letter-spacing="-1.6">Amogh Ramesh</text>
+<text x="42" y="152" fill="#516876" font-size="23">Data platforms · Database engines · Systems</text>
+<path d="M 42 184 H 630" stroke="#d0dcd9"/>
+<text x="42" y="220" fill="#516876" font-size="14" font-weight="600" letter-spacing="1.4">BENGALURU, INDIA</text>
+<text x="340" y="220" fill="#237b70" font-size="15" font-weight="600" letter-spacing=".7">Rust / C++ / Go / Python</text>
+</g>
+<g fill="none" stroke="#d0dcd9" stroke-width="1.5">
+<rect x="767" y="43" width="208" height="174" rx="12"/>
+<path d="M 791 81 H 951 M 791 179 H 951 M 815 57 V 203 M 927 57 V 203"/>
+</g>
+<rect x="815" y="81" width="112" height="98" fill="#e8eeea"/>
+<text x="871" y="146" text-anchor="middle" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Arial,sans-serif" font-size="46" font-weight="600" letter-spacing="-2" fill="#237b70">AR</text>
+<g fill="#237b70"><circle cx="815" cy="81" r="3"/><circle cx="927" cy="179" r="3"/></g>
+</svg>
